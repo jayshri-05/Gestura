@@ -50,9 +50,15 @@ export default function App() {
   const loadHandTracker = useCallback(async () => {
     if (landmarkerRef.current) return landmarkerRef.current;
     setLandmarkerState('Loading hand tracker…');
-    const vision = await FilesetResolver.forVisionTasks('/wasm');
+    // Keep the JS bundle, WASM runtime, and model on the same known-good release.
+    const vision = await FilesetResolver.forVisionTasks(
+      'https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision@0.10.35/wasm',
+    );
     const task = await HandLandmarker.createFromOptions(vision, {
-      baseOptions: { modelAssetPath: '/hand_landmarker.task' },
+      baseOptions: {
+        modelAssetPath: 'https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task',
+        delegate: 'GPU',
+      },
       runningMode: 'VIDEO',
       numHands: 1,
       minHandDetectionConfidence: 0.35,
