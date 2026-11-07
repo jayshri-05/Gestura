@@ -1,8 +1,8 @@
 # GESTURA
 
-GESTURA is a new project workspace because no existing website repository was available. This is an initial app foundation, not the full product described in the original brief.
+GESTURA is a web app for learning ASL fingerspelling and exploring camera-based sign recognition. You can try the deployed app here: **[Open GESTURA](https://gestura-5oxt.onrender.com/)**.
 
-For the preconfigured single-service Docker deployment, follow [DEPLOY.md](DEPLOY.md). The production bundle serves the frontend and API from one HTTPS origin. Raw and processed training data are excluded from the downloadable project archive; the trained checkpoint and evaluation records are included.
+This repository contains the website, its API, the trained camera model, learning materials, and evaluation records. The camera feature is experimental, so check the model results and limitations below before relying on its predictions. Raw and processed training images are not included in the project download. For deployment, see [DEPLOY.md](DEPLOY.md); the Docker setup serves the website and API from one HTTPS origin.
 
 ## Current working scope
 
