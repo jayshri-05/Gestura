@@ -1,0 +1,34 @@
+{
+  "task": "static ASL fingerspelling, 24 classes A-I and K-Y",
+  "dataset": {
+    "grassknoted_training_candidates": 72000,
+    "ayuraj_supplemental_candidates": 1675,
+    "danrasband_independent_test_candidates": 720,
+    "train_rows": 66140,
+    "validation_rows": 7535,
+    "test_rows": 720,
+    "seed": 42,
+    "image_size": [
+      64,
+      64
+    ],
+    "channels": 3,
+    "excluded_classes": [
+      "J",
+      "Z",
+      "SPACE",
+      "DELETE",
+      "NOTHING",
+      "digits"
+    ]
+  },
+  "best_validation_accuracy": 0.9988055739880557,
+  "test_accuracy": 0.18611111111111112,
+  "test_macro_f1": 0.18611111111111112,
+  "test_correct": 134,
+  "test_rows": 720,
+  "device": "cpu",
+  "training_seconds": 2543.02,
+  "checkpoint": "models\\webcam_asl_rgb.pt",
+  "note": "Independent Dan Rasband test set was not used for training or model selection. Scores measure that public image set, not personalized webcam accuracy."
+}

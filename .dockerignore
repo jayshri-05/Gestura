@@ -1,0 +1,10 @@
+.git
+.gitignore
+**/node_modules
+**/dist
+**/__pycache__
+**/.pytest_cache
+backend/.vendor
+backend/data
+backend/uvicorn-*.log
+*.zip

@@ -1,0 +1,18 @@
+# Large datasets and generated training caches
+backend/data/
+backend/.vendor/
+backend/**/__pycache__/
+backend/**/*.py[cod]
+backend/uvicorn-*.log
+
+# Installed frontend dependencies and generated builds
+frontend/node_modules/
+frontend/dist/
+
+# Local Python environments and OS files
+.venv/
+venv/
+__pycache__/
+Thumbs.db
+.DS_Store
+GESTURA-download.zip

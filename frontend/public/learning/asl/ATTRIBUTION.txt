@@ -1,0 +1,19 @@
+GESTURA ASL visual learning assets
+
+1) Full chart and sharp letter crops
+
+File: asl-alphabet-gallaudet.svg
+Source: Wikimedia Commons, “Asl alphabet gallaudet.svg”
+https://commons.wikimedia.org/wiki/File:Asl_alphabet_gallaudet.svg
+The file page identifies Ds13 (Darren Stone) as author and Marnanel as vectorizer, and marks the work public domain. It is included locally so the A–Z handshape chart with J/Z motion arrows is visible without leaving GESTURA.
+
+Files: asl-letter-A.svg through asl-letter-Z.svg
+Each file is a standalone copy of the source SVG with a per-letter viewBox crop. The browser renders the original vector paths; they were not rasterized or enlarged from 28×28 pixels.
+
+2) Classifier training data (separate from the display chart)
+
+Source: Kaggle Sign Language MNIST by datamunge
+https://www.kaggle.com/datasets/datamunge/sign-language-mnist
+The dataset page lists CC0. The trained model uses its 24 classes A–I and K–Y. J and Z require movement and are excluded from this still-image classifier. No personal photographs were used for training.
+
+The learning-card and quiz images now use the public-domain chart crops; Sign Language MNIST images are not displayed in the learning UI. The optional ASL University/Lifeprint link in the UI provides supplemental reference.

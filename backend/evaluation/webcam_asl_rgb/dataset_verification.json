@@ -1,0 +1,66 @@
+{
+  "status": "passed",
+  "classes": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y"
+  ],
+  "archives": {
+    "grassknoted": {
+      "archive": "grassknoted-asl-alphabet-v1.zip",
+      "bytes": 1100887034,
+      "entries": 87028,
+      "crc_check": "passed",
+      "sample_image_formats_dimensions_mode": [
+        "JPEG:200x200:RGB"
+      ],
+      "verified_class_count": 24
+    },
+    "ayuraj": {
+      "archive": "ayuraj-asl-dataset-v1.zip",
+      "bytes": 59642568,
+      "entries": 5030,
+      "crc_check": "passed",
+      "sample_image_formats_dimensions_mode": [
+        "JPEG:400x400:RGB"
+      ],
+      "verified_class_count": 24
+    },
+    "danrasband": {
+      "archive": "danrasband-asl-alphabet-test-v1.zip",
+      "bytes": 25489344,
+      "entries": 1740,
+      "crc_check": "passed",
+      "sample_image_formats_dimensions_mode": [
+        "JPEG:200x200:RGB"
+      ],
+      "verified_class_count": 24
+    }
+  },
+  "records_by_source": {
+    "grassknoted": 72000,
+    "ayuraj": 1675,
+    "danrasband": 720
+  }
+}

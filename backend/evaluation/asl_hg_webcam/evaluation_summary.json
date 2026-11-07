@@ -1,0 +1,42 @@
+{
+  "task": "static ASL fingerspelling, 24 classes A-I and K-Y",
+  "dataset": "Mendeley ASL-HG v1 (CC BY 4.0)",
+  "source_rows": 24000,
+  "train_rows": 19183,
+  "validation_rows": 2400,
+  "test_rows": 2400,
+  "train_volunteers": [
+    "P7",
+    "P3",
+    "P2",
+    "P8",
+    "P5",
+    "P6",
+    "P9",
+    "P4"
+  ],
+  "validation_volunteer": "P1",
+  "test_volunteer": "P10",
+  "hand_detection_coverage": {
+    "train": 0.9991145833333334,
+    "validation": 1.0,
+    "test": 1.0
+  },
+  "signer_independent_split": true,
+  "seed": 42,
+  "epochs": 10,
+  "image_size": [
+    64,
+    64
+  ],
+  "channels": 3,
+  "crop": "MediaPipe 21-landmark square crop, 1.5x padding (same as frontend)",
+  "best_validation_accuracy": 0.68875,
+  "test_accuracy": 0.8258333333333333,
+  "test_macro_f1": 0.7949419936400787,
+  "test_correct": 1982,
+  "device": "cpu",
+  "training_seconds": 704.58,
+  "checkpoint": "models\\webcam_asl_rgb.pt",
+  "note": "Test signer was excluded from training, validation, and checkpoint selection. A prior full-frame baseline was evaluated on this volunteer during development, so this is not a pristine blind challenge. This single-signer result is not a guarantee of accuracy for arbitrary webcam users."
+}
